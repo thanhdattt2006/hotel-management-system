@@ -1,4 +1,11 @@
 # File chua cac logic nghiep vu xu ly khach san
+import sys
+if sys.platform == "win32":
+    try:
+        sys.stdout.reconfigure(encoding='utf-8')
+    except Exception:
+        pass
+
 from models import PhongThuong, PhongVIP, KhachHang, PhieuThue
 from file_handler import save_data, load_data
 
